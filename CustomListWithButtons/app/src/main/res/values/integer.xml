@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="button_plus_view">1</integer>
+    <integer name="button_plus_position">2</integer>
+    <integer name="button_minus_view">3</integer>
+    <integer name="button_minus_position">4</integer>
+</resources>
