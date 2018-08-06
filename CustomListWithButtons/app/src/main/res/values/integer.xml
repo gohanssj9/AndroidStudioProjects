@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="button_plus_view">1</integer>
-    <integer name="button_plus_position">2</integer>
-    <integer name="button_minus_view">3</integer>
-    <integer name="button_minus_position">4</integer>
+    <integer name="button_viewButton_view">1</integer>
+    <integer name="button_viewButton_position">2</integer>
+    <integer name="button_editButton_view">3</integer>
+    <integer name="button_editButton_position">4</integer>
+    <integer name="button_deleteButton_view">5</integer>
+    <integer name="button_deleteButton_position">6</integer>
+    <integer name="button_editStudentButton_view">7</integer>
+    <integer name="button_editStudentButton_position">8</integer>
+    <integer name="button_deleteStudentButton_view">9</integer>
+    <integer name="button_deleteStudentButton_position">10</integer>
 </resources>

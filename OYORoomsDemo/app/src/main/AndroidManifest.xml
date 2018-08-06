@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.devil_jin.customlistwithbuttons">
-
-    <uses-permission android:name="android.permission.INTERNET" />
+    package="com.example.devil_jin.oyoroomsdemo">
 
     <application
         android:allowBackup="true"
@@ -18,14 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddDepartmentActivity" />
-        <activity android:name=".DeleteDepartmentActivity" />
-        <activity android:name=".EditDepartmentActivity" />
-        <activity android:name=".ViewDepartmentActivity" />
-        <activity android:name=".AddStudentActivity" />
-        <activity android:name=".EditStudentActivity" />
-        <activity android:name=".DeleteStudentActivity" />
-        <activity android:name=".DummyFragmentActivity"></activity>
+        <activity android:name=".SplashScreenActivity"></activity>
     </application>
 
 </manifest>

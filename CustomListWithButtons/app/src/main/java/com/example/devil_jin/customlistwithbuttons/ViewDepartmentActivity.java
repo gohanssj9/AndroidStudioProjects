@@ -4,10 +4,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 
 import org.json.JSONArray;
@@ -20,26 +17,28 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class ViewDepartmentActivity extends AppCompatActivity {
 
-    private ListView listView;
-    public static ArrayList<Model> modelArrayList;
-    private CustomListAdapter customListAdapter;
-//    private Button addDeptButton;
-//    private String [] fruitList = new String[] {"Apples", "Oranges", "Grapes", "Tomatoes", "Mangoes"};
+    private ListView studentListView;
+    public static ArrayList<StudentModel> modelArrayList;
+    private CustomStudentListAdapter customStudentListAdapter;
+
+    public static int storageId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_view_department);
 
-        listView = (ListView) findViewById(R.id.listView);
-        downloadJSON("http://192.168.10.212:8000/departments");
+        Intent intent = getIntent();
+        storageId = Integer.parseInt(intent.getStringExtra("id"));
 
+        studentListView = (ListView) findViewById(R.id.studentListView);
+        downloadJSON("http://192.168.10.212:8000/departments/" + storageId + "/students");
     }
 
-    public void addNewDepartment(View view){
-        Intent newIntent = new Intent(MainActivity.this, AddDepartmentActivity.class);
+    public void addNewStudent(View view){
+        Intent newIntent = new Intent(ViewDepartmentActivity.this, AddStudentActivity.class);
         startActivity(newIntent);
     }
 
@@ -48,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         class DownloadJSON extends AsyncTask<Void, Void, String> {
             @Override
             protected void onPreExecute() {
-            super.onPreExecute();
-        }
+                super.onPreExecute();
+            }
 
             @Override
             protected void onPostExecute(String s) {
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 super.onPostExecute(s);
                 //Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
                 try {
-                    loadIntoListView(s);
+                    loadIntoStudentListView(s);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -84,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } catch (Exception e){
                     System.out.println("Inside Catch");
-                    return null;
+                    return "0";
                 }
             }
         }
@@ -92,33 +91,34 @@ public class MainActivity extends AppCompatActivity {
         getJSON.execute();
     }
 
-    private void loadIntoListView(String json) throws JSONException{
+    private void loadIntoStudentListView(String json) throws JSONException{
         JSONArray jsonArray = new JSONArray(json);
-        String [] bodies = new String[jsonArray.length()];
-        String [] titles = new String[jsonArray.length()];
+        int [] ages = new int[jsonArray.length()];
+        String [] names = new String[jsonArray.length()];
         int [] ids = new int[jsonArray.length()];
         for(int i = 0; i < jsonArray.length(); i++){
             JSONObject obj = jsonArray.getJSONObject(i);
-            bodies[i] = obj.getString("body");
+            ages[i] = obj.getInt("age");
             ids[i] = obj.getInt("id");
-            titles[i] = obj.getString("title");
-
+            names[i] = obj.getString("name");
         }
-        modelArrayList = getModel(bodies, titles, ids);
-        customListAdapter = new CustomListAdapter(this);
+        modelArrayList = getModel(ages, names, ids);
+        customStudentListAdapter = new CustomStudentListAdapter(this);
 
-        listView.setAdapter(customListAdapter);
+        studentListView.setAdapter(customStudentListAdapter);
     }
 
-    private ArrayList<Model> getModel(String [] bodies, String [] titles, int [] ids){
-        ArrayList<Model> list = new ArrayList<>();
-        for(int i = 0; i < bodies.length; i++){
-            Model model = new Model();
-            model.setDepartmentName(bodies[i]);
-            model.setDepartmentId(ids[i]);
-            model.setDepartmentTitle(titles[i]);
+    private ArrayList<StudentModel> getModel(int [] ages, String [] names, int [] ids){
+        ArrayList<StudentModel> list = new ArrayList<>();
+        for(int i = 0; i < ages.length; i++){
+            StudentModel model = new StudentModel();
+            model.setStudentName(names[i]);
+            model.setStudentId(ids[i]);
+            model.setStudentAge(ages[i]);
             list.add(model);
         }
         return list;
     }
+
+
 }

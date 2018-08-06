@@ -1,22 +1,31 @@
 package com.example.devil_jin.customlistwithbuttons;
 
 public class Model {
-    private int number;
-    private String fruit;
+    private String departmentName;
+    private int departmentId;
+    private String departmentTitle;
 
-    public int getNumber(){
-        return number;
+    public int getDepartmentId() {
+        return departmentId;
     }
 
-    public void setNumber(int number){
-        this.number = number;
+    public void setDepartmentId(int departmentId) {
+        this.departmentId = departmentId;
     }
 
-    public String getFruit(){
-        return fruit;
+    public String getDepartmentTitle() {
+        return departmentTitle;
     }
 
-    public void setFruit(String fruit){
-        this.fruit = fruit;
+    public void setDepartmentTitle(String departmentTitle){
+        this.departmentTitle = departmentTitle;
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
     }
 }
