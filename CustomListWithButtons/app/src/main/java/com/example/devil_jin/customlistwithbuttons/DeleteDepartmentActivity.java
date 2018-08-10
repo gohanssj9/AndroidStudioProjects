@@ -83,9 +83,9 @@ public class DeleteDepartmentActivity extends AppCompatActivity {
                 super.onPostExecute(s);
 //                MainActivity activity = new MainActivity();
 //                activity.recreate();
-                Intent intent = new Intent(getApplicationContext(), DummyFragmentActivity.class);
+//                Intent intent = new Intent(getApplicationContext(), DummyFragmentActivity.class);
                 //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent); // finish();
+//                startActivity(intent); // finish();
             }
         }
 

@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/gradient"
+    android:id="@+id/OyoRelativeLayout"
     tools:context=".SplashScreenActivity">
 
     <TextView
+        android:id="@+id/OyoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -15,6 +17,81 @@
         android:text="OYO"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        android:fontFamily="@drawable/alegreya_sans_black"/>
+        android:fontFamily="@font/alegreya_sans_black" />
+
+    <TextView
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:id="@+id/wifiTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="228dp"
+        android:text="Free Wi-fi"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/acroomsTextView"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="190dp"
+        android:text="AC Rooms"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/booknowpaylaterTextView"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="148dp"
+        android:gravity="center"
+        android:text="Book now, Pay Later"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/cleanhygieneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="106dp"
+        android:gravity="center"
+        android:text="Clean and Hygienic Rooms"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/gethundredoffTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getStartedButton"
+        android:layout_centerHorizontal="true"
+        android:text="Get 500 OYOMoney on Signup !"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Get Started "
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/rounded_button"
+        android:onClick="goToLogin"
+        android:visibility="invisible" />
 
 </RelativeLayout>

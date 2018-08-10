@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#F60000</color>
-    <color name="colorPrimaryDark">#F60000</color>
+    <color name="colorPrimaryDark">#DD2415</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="toolbarColorPrimary">#DDDDDD</color>
 </resources>

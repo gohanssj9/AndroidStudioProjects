@@ -2,6 +2,7 @@ package com.example.devil_jin.customlistwithbuttons;
 
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView listView;
     public static ArrayList<Model> modelArrayList;
     private CustomListAdapter customListAdapter;
+    SwipeRefreshLayout swipeRefreshLayout;
 //    private Button addDeptButton;
 //    private String [] fruitList = new String[] {"Apples", "Oranges", "Grapes", "Tomatoes", "Mangoes"};
 
@@ -33,8 +35,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
+
         listView = (ListView) findViewById(R.id.listView);
         downloadJSON("http://192.168.10.212:8000/departments");
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                downloadJSON("http://192.168.10.212:8000/departments");
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        });
 
     }
 
