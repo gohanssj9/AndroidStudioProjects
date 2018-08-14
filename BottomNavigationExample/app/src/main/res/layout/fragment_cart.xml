@@ -15,12 +15,4 @@
         android:textSize="32sp"
         android:textColor="@android:color/darker_gray"
         android:textStyle="bold"/>
-
-    <ImageView
-        android:id="@+id/imageViewCart"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        android:scaleType="centerCrop"
-        />
 </FrameLayout>

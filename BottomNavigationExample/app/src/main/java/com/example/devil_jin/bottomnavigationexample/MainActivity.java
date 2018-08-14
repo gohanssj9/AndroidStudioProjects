@@ -25,23 +25,26 @@ import com.bumptech.glide.request.target.BitmapImageViewTarget;
 public class MainActivity extends AppCompatActivity {
 
     private ActionBar toolbar;
-    ImageView imageViewC;
+    //ImageView imageViewC;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageViewC = (ImageView) findViewById(R.id.imageViewCart);
-
-        Glide.with(this).load(R.drawable.vegeta).asBitmap().centerCrop().into(new BitmapImageViewTarget(imageViewC) {
-            @Override
-            protected void setResource(Bitmap resource) {
-                RoundedBitmapDrawable circularBitmapDrawable =
-                        RoundedBitmapDrawableFactory.create(getApplicationContext().getResources(), resource);
-                circularBitmapDrawable.setCircular(true);
-                imageViewC.setImageDrawable(circularBitmapDrawable);
-            }
-        });
+//        imageViewC = (ImageView) findViewById(R.id.imageViewCart);
+//
+//        Glide.with(this)
+//                .load(R.drawable.vegeta)
+//                .asBitmap()
+//                .into(new BitmapImageViewTarget(imageViewC) {
+//                    @Override
+//                    protected void setResource(Bitmap resource) {
+//                        RoundedBitmapDrawable drawable = RoundedBitmapDrawableFactory.create(getApplicationContext().getResources(),
+//                                Bitmap.createScaledBitmap(resource, 50, 50, false));
+//                        drawable.setCircular(true);
+//                        imageViewC.setImageDrawable(drawable);
+//                    }
+//                });
 
         toolbar = getSupportActionBar();
         System.out.println(toolbar);

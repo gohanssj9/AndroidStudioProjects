@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:id="@+id/dontMissTheseFrameLayout"
+    tools:context=".DontMissTheseFragment">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalLatestOYO"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@null"
+        android:scrollbarThumbHorizontal="@null">
+
+        <LinearLayout
+            android:id="@+id/linearInsideLatestOYO"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/latest_1"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/latest_2"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/latest_3"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/latest_4"
+                android:layout_margin="1dp"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</FrameLayout>

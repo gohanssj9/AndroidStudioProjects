@@ -17,7 +17,7 @@
         android:text="OYO"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        android:fontFamily="@font/alegreya_sans_black" />
+        android:fontFamily="@font/meloriac_regular" />
 
     <TextView
         android:layout_width="195dp"

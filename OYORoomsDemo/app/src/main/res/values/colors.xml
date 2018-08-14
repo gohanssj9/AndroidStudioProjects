@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#DD2415</color>
     <color name="colorAccent">#FF4081</color>
     <color name="toolbarColorPrimary">#DDDDDD</color>
+    <color name="backgroundBottomNavigation">#FFFFFF</color>
 </resources>

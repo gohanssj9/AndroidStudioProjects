@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:id="@+id/dontMissTheseFrameLayout"
+    tools:context=".DontMissTheseFragment">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalDontMiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@null"
+        android:scrollbarThumbHorizontal="@null">
+
+        <LinearLayout
+            android:id="@+id/linearInsideDontMiss"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/dont_1"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/dont_2"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/dont_3"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/dont_4"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/dont_5"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/dont_6"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/dont_7"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/dont_8"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/dont_9"
+                android:layout_margin="1dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</FrameLayout>
