@@ -4,12 +4,16 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:windowSoftInputMode="stateHidden">
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +23,20 @@
         <activity android:name=".SplashScreenActivity" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".LocationsActivity"
+            android:label="@string/title_activity_locations"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".OffersActivity"
+            android:label="@string/title_activity_offers"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".RecommendedActivity"
+            android:label="@string/title_activity_recommended"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

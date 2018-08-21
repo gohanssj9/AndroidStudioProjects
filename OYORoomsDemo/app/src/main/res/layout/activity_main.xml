@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -34,7 +33,7 @@
                 android:text="OYO"
                 android:textSize="32sp"
                 android:layout_marginLeft="5dp"
-                android:fontFamily="@font/alegreya_sans_black"/>
+                android:fontFamily="@font/meloriac_regular"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -50,8 +49,8 @@
                 android:layout_height="48dp"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="20dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/rounded_button">
 
                 <ImageView
@@ -85,18 +84,18 @@
             android:background="#DDDDDD">
         </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/recommendedFrameLayout"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="@android:color/white">
-        </FrameLayout>
+        <!--<FrameLayout-->
+            <!--android:id="@+id/recommendedFrameLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="250dp"-->
+            <!--android:background="@android:color/white">-->
+        <!--</FrameLayout>-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:background="#DDDDDD">
-        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:background="#DDDDDD">-->
+        <!--</LinearLayout>-->
 
         <RelativeLayout
             android:id="@+id/offersOfWeek"
@@ -132,7 +131,8 @@
                         android:layout_weight="1"
                         android:src="@drawable/offers"
                         android:scaleType="fitXY"
-                        android:padding="1dp"/>
+                        android:padding="1dp"
+                        android:onClick="offersActivity"/>
 
                     <ImageView
                         android:layout_width="0dp"
@@ -338,7 +338,7 @@
         <LinearLayout
             android:id="@+id/OyoQ"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="250dp"
             android:orientation="vertical"
             android:background="#FFFFFF"
             android:layout_margin="5dp">

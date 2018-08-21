@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OffersActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarOffers"
+                android:minHeight="?attr/actionBarSize"
+                android:layout_width="50dp"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="#000000"
+                app:title=""
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:background="@android:color/transparent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/offers"
+                    android:alpha="0.4"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:id="@+id/searchLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFFFFF">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/search"
+                        android:padding="5dp"/>
+
+                    <EditText
+                        android:id="@+id/searchEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cursorVisible="false"
+                        android:textSize="16sp"
+                        android:background="@android:color/transparent"
+                        android:hint="Search by locality, landmark or city" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#DDDDDD">
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="All Cities"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:text="Agra"
+                        android:fontFamily="@font/belle_sans_condensed_regular"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:text="Ahmedabad"
+                        android:fontFamily="@font/belle_sans_condensed_regular"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:text="Ajmer"
+                        android:fontFamily="@font/belle_sans_condensed_regular"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:text="Alappuzha"
+                        android:fontFamily="@font/belle_sans_condensed_regular"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:text="Alibag"
+                        android:fontFamily="@font/belle_sans_condensed_regular"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:text="Excess"
+                        android:fontFamily="@font/belle_sans_condensed_regular"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:text="Excess"
+                        android:fontFamily="@font/belle_sans_condensed_regular"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:text="Excess"
+                        android:fontFamily="@font/belle_sans_condensed_regular"
+                        android:layout_marginStart="20dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

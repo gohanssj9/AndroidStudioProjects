@@ -60,7 +60,8 @@
                     android:layout_height="84dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/hyderabad" />
+                    android:src="@drawable/hyderabad"
+                    android:onClick="nextActivity"/>
 
             </RelativeLayout>
 
@@ -84,7 +85,8 @@
                     android:layout_height="84dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/chennai" />
+                    android:src="@drawable/chennai"
+                    android:onClick="nextActivity"/>
 
             </RelativeLayout>
 
@@ -108,7 +110,8 @@
                     android:layout_height="84dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/delhi" />
+                    android:src="@drawable/delhi"
+                    android:onClick="nextActivity"/>
 
             </RelativeLayout>
 
@@ -132,7 +135,8 @@
                     android:layout_height="84dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/mumbai" />
+                    android:src="@drawable/mumbai"
+                    android:onClick="nextActivity"/>
 
             </RelativeLayout>
 
@@ -147,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:text="Visakhapatnam"
+                    android:text="Vizag"
                     android:textSize="12sp"
                     android:layout_marginBottom="5dp" />
 
@@ -156,7 +160,8 @@
                     android:layout_height="84dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/visakhapatnam" />
+                    android:src="@drawable/visakhapatnam"
+                    android:onClick="nextActivity"/>
 
             </RelativeLayout>
 
@@ -180,7 +185,8 @@
                     android:layout_height="84dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/bangalore" />
+                    android:src="@drawable/bangalore"
+                    android:onClick="nextActivity"/>
 
             </RelativeLayout>
 
@@ -204,7 +210,8 @@
                     android:layout_height="84dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/noida" />
+                    android:src="@drawable/noida"
+                    android:onClick="nextActivity"/>
 
             </RelativeLayout>
 
@@ -228,7 +235,8 @@
                     android:layout_height="84dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/kanyakumari" />
+                    android:src="@drawable/kanyakumari"
+                    android:onClick="nextActivity"/>
 
             </RelativeLayout>
 
@@ -252,7 +260,8 @@
                     android:layout_height="84dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/kolkata" />
+                    android:src="@drawable/kolkata"
+                    android:onClick="nextActivity"/>
 
             </RelativeLayout>
 
@@ -276,7 +285,7 @@
                     android:layout_height="84dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/all_cities" />
+                    android:src="@drawable/all_cities_2" />
 
             </RelativeLayout>
         </LinearLayout>

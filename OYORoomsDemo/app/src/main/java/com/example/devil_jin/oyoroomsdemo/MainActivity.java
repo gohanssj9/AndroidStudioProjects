@@ -1,5 +1,6 @@
 package com.example.devil_jin.oyoroomsdemo;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -7,6 +8,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         loadFragment(new LocationsFragment(), R.id.locationsFrameLayout);
-        loadFragment(new RecommendedFragment(), R.id.recommendedFrameLayout);
+        //loadFragment(new RecommendedFragment(), R.id.recommendedFrameLayout);
         loadFragment(new LatestOYOFragment(), R.id.latestOyoFrameLayout);
         loadFragment(new DontMissTheseFragment(), R.id.dontMissTheseFrameLayout);
 
@@ -59,5 +61,15 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(drawable_resource, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
+    }
+
+    public void nextActivity(View view){
+        Intent intent = new Intent(getApplicationContext(), LocationsActivity.class);
+        startActivity(intent);
+    }
+
+    public void offersActivity(View view){
+        Intent intent = new Intent(getApplicationContext(), RecommendedActivity.class);
+        startActivity(intent);
     }
 }
