@@ -23,28 +23,28 @@
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/latest_1"
+                android:src="#FFFFF1"
                 android:layout_margin="1dp" />
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/latest_2"
+                android:src="#FFFFF2"
                 android:layout_margin="1dp"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/latest_3"
+                android:src="#FFFFF3"
                 android:layout_margin="1dp"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/latest_4"
+                android:src="#FFFFF4"
                 android:layout_margin="1dp"/>
 
 

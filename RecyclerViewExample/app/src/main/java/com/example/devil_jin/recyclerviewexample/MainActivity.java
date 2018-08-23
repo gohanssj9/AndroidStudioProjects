@@ -6,6 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.io.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,10 +16,19 @@ public class MainActivity extends AppCompatActivity {
     ArrayList roomPricesAfter = new ArrayList<>(Arrays.asList("₹680", "₹720", "₹975", "₹504", "₹950", "₹920", "₹1000", "₹880"));
     ArrayList percentageOff = new ArrayList<>(Arrays.asList("66% OFF", "28% OFF", "35% OFF", "58% OFF", "81% OFF", "54% OFF", "90% OFF", "12% OFF"));
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        for(int j=0; j<=7; j++)
+            for(int i=0;i<=7;i++){
+                roomImages.add(roomImages.get(i));
+                roomPricesBefore.add(roomPricesBefore.get(i));
+                roomPricesAfter.add(roomPricesAfter.get(i));
+                percentageOff.add(percentageOff.get(i));
+            }
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 

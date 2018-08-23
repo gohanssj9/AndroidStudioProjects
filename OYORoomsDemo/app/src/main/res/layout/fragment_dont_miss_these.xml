@@ -23,63 +23,63 @@
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/dont_1"
+                android:src="#FFFFF1"
                 android:layout_margin="1dp"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/dont_2"
+                android:src="#FFFFF2"
                 android:layout_margin="1dp"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/dont_3"
+                android:src="#FFFFF3"
                 android:layout_margin="1dp"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/dont_4"
+                android:src="#FFFFF4"
                 android:layout_margin="1dp"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/dont_5"
+                android:src="#FFFFF5"
                 android:layout_margin="1dp"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/dont_6"
+                android:src="#FFFFF6"
                 android:layout_margin="1dp"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/dont_7"
+                android:src="#FFFFF7"
                 android:layout_margin="1dp"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/dont_8"
+                android:src="#FFFFF8"
                 android:layout_margin="1dp"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/dont_9"
+                android:src="#FFFFF9"
                 android:layout_margin="1dp"/>
 
         </LinearLayout>

@@ -71,12 +71,11 @@
 
         </RelativeLayout>
 
-        <FrameLayout
-            android:id="@+id/locationsFrameLayout"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@android:color/white">
-        </FrameLayout>
+            android:layout_height="110dp">
+        </android.support.v7.widget.RecyclerView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -84,18 +83,17 @@
             android:background="#DDDDDD">
         </LinearLayout>
 
-        <!--<FrameLayout-->
-            <!--android:id="@+id/recommendedFrameLayout"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="250dp"-->
-            <!--android:background="@android:color/white">-->
-        <!--</FrameLayout>-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recommended_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
 
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="15dp"-->
-            <!--android:background="#DDDDDD">-->
-        <!--</LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#DDDDDD">
+        </LinearLayout>
 
         <RelativeLayout
             android:id="@+id/offersOfWeek"
@@ -129,7 +127,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/offers"
+                        android:src="#FFFFF1"
                         android:scaleType="fitXY"
                         android:padding="1dp"
                         android:onClick="offersActivity"/>
@@ -138,7 +136,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/offers_1"
+                        android:src="#FFFFF2"
                         android:scaleType="fitXY"
                         android:padding="1dp"/>
 
@@ -156,7 +154,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/offers_2"
+                        android:src="#FFFFF3"
                         android:scaleType="fitXY"
                         android:padding="1dp"/>
 
@@ -164,7 +162,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/offers_3"
+                        android:src="#FFFFF4"
                         android:scaleType="fitXY"
                         android:padding="1dp"/>
 
@@ -191,122 +189,121 @@
                 android:textSize="10sp"
                 android:layout_margin="5dp" />
 
-            <FrameLayout
-                android:id="@+id/dontMissTheseFrameLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/white">
-            </FrameLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:background="#DDDDDD">
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/flashSale"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:orientation="vertical"
-            android:layout_margin="5dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="Flash Sale"
-                android:textSize="10sp"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="fitXY"
-                android:src="@drawable/flash_sale"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:background="#DDDDDD">
-        </LinearLayout>
-
-        <RelativeLayout
-            android:id="@+id/dealsForYou"
-            android:layout_width="match_parent"
-            android:layout_height="600dp"
-            android:orientation="vertical"
-            android:background="#FFFFFF"
-            android:layout_margin="5dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Deals for you"
-                android:textSize="10sp"
-                android:layout_margin="5dp"/>
-
-
-            <RelativeLayout
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/dont_miss_these_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="190dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="30dp"
-                    android:elevation="10dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/deals_for_you"
-                        android:scaleType="fitXY"
-                        android:padding="1dp"/>
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/deals_for_you_1"
-                        android:scaleType="fitXY"
-                        android:padding="1dp"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="390dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:elevation="10dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/deals_for_you_2"
-                        android:scaleType="fitXY"
-                        android:padding="1dp"/>
-
-                </LinearLayout>
-            </RelativeLayout>
-
-
-        </RelativeLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="15dp"
             android:background="#DDDDDD">
         </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/flashSale"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="250dp"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_margin="5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:text="Flash Sale"-->
+                <!--android:textSize="10sp"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/flash_sale"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:background="#DDDDDD">-->
+        <!--</LinearLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/dealsForYou"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="600dp"-->
+            <!--android:orientation="vertical"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:layout_margin="5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Deals for you"-->
+                <!--android:textSize="10sp"-->
+                <!--android:layout_margin="5dp"/>-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="190dp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--android:elevation="10dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:src="@drawable/deals_for_you"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:padding="1dp"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:src="@drawable/deals_for_you_1"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:padding="1dp"/>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="390dp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:elevation="10dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:src="@drawable/deals_for_you_2"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:padding="1dp"/>-->
+
+                <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:background="#DDDDDD">-->
+        <!--</LinearLayout>-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -321,12 +318,18 @@
                 android:textSize="10sp"
                 android:layout_margin="5dp" />
 
-            <FrameLayout
-                android:id="@+id/latestOyoFrameLayout"
+            <!--<FrameLayout-->
+                <!--android:id="@+id/latestOyoFrameLayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@android:color/white">-->
+            <!--</FrameLayout>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/latest_oyo_recycler_view"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/white">
-            </FrameLayout>
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
         </LinearLayout>
 
         <LinearLayout
@@ -335,55 +338,55 @@
             android:background="#DDDDDD">
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/OyoQ"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:orientation="vertical"
-            android:background="#FFFFFF"
-            android:layout_margin="5dp">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/OyoQ"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="250dp"-->
+            <!--android:orientation="vertical"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:layout_margin="5dp">-->
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="OYO Q"
-                android:textSize="10sp"
-                android:layout_margin="5dp"/>
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="OYO Q"-->
+                <!--android:textSize="10sp"-->
+                <!--android:layout_margin="5dp"/>-->
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="fitXY"
-                android:src="@drawable/latest_oyo_q"/>
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/latest_oyo_q"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:background="#DDDDDD">-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/inviteFriends"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="125dp"-->
+            <!--android:orientation="vertical"-->
+            <!--android:background="#FFFFFF">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/invite_friends"-->
+                <!--android:scaleType="fitXY"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:background="#DDDDDD">-->
+        <!--</LinearLayout>-->
+
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:background="#DDDDDD">
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/inviteFriends"
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:orientation="vertical"
-            android:background="#FFFFFF">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/invite_friends"
-                android:scaleType="fitXY"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:background="#DDDDDD">
-        </LinearLayout>
-
-    </LinearLayout>
     </ScrollView>
 
     <android.support.design.widget.BottomNavigationView

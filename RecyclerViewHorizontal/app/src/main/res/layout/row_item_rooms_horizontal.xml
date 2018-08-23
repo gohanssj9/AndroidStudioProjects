@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/innerImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/a_1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeInside"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/gradient_black">
+
+                <TextView
+                    android:id="@+id/strikeOutTextView"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="8dp"
+                    android:text="StrikeoutText"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/newPriceTextView"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/strikeOutTextView"
+                    android:layout_below="@+id/strikeOutTextView"
+                    android:text="NewPrice"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/percentOffTextView"
+                    android:layout_width="77dp"
+                    android:layout_height="29dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/strikeOutTextView"
+                    android:background="#000000"
+                    android:gravity="center"
+                    android:text="XX% OFF"
+                    android:textColor="@android:color/holo_orange_light" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="62dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/gradient_black"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3.5dp"
+                    android:text="0.3 km"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/heartImageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="11dp"
+                android:alpha="0.4"
+                app:srcCompat="@drawable/ic_white_heart_3" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="11dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="OYO 15959 The City Park Deluxe"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bodyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/titleTextView"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Abids, Hyderabad"
+                android:textColor="#111111"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ratingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="16dp"
+                android:background="#3D8000"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="4.6"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ratingInTextView"
+                android:layout_width="80dp"
+                android:layout_height="23.5dp"
+                android:gravity="center"
+                android:layout_alignTop="@+id/ratingTextView"
+                android:layout_toEndOf="@+id/ratingTextView"
+                android:text="Excellent"
+                android:background="#E9F4DE"
+                android:textColor="#58AC00"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/numberOfRatingsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/ratingTextView"
+                android:layout_marginEnd="97dp"
+                android:text="424 Ratings" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/nextImageView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_below="@+id/bodyTextView"-->
+            <!--android:layout_toEndOf="@+id/numberOfRatingsTextView"-->
+            <!--app:srcCompat="@drawable/next_icon" />-->
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
