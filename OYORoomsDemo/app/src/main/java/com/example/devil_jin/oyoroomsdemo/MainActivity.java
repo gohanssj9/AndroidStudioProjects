@@ -20,17 +20,19 @@ public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
 
-    ArrayList imagesRelativeLayout;
-    ArrayList dontMissTheseImages;
-    ArrayList latestOYOImages;
-
-//    ArrayList imagesRelativeLayout = new ArrayList<>(Arrays.asList(R.drawable.gps, R.drawable.a_1, R.drawable.a_2, R.drawable.a_3, R.drawable.a_4,
-//            R.drawable.a_5, R.drawable.a_6, R.drawable.a_7, R.drawable.a_8, R.drawable.a_9, R.drawable.all_cities_2));
+    ArrayList imagesRelativeLayout = new ArrayList<>(Arrays.asList(R.drawable.gps, R.drawable.a_1, R.drawable.a_2, R.drawable.a_3, R.drawable.a_4,
+            R.drawable.a_5, R.drawable.a_6, R.drawable.a_7, R.drawable.a_8, R.drawable.a_9, R.drawable.all_cities_2));
     ArrayList textUnderImages = new ArrayList<>(Arrays.asList("Nearby", "Hyderabad", "Chennai", "Delhi", "Mumbai", "Vizag", "Bengaluru", "Noida", "Trichy", "Kolkata", "All Cities"));
-//    ArrayList dontMissTheseImages = new ArrayList<>(Arrays.asList(R.drawable.a_1, R.drawable.a_2, R.drawable.a_3, R.drawable.a_4,
-//            R.drawable.a_5, R.drawable.a_6, R.drawable.a_7, R.drawable.a_8, R.drawable.a_9));
+    ArrayList dontMissTheseImages = new ArrayList<>(Arrays.asList(R.drawable.dont_1, R.drawable.dont_2, R.drawable.dont_3, R.drawable.dont_4,
+            R.drawable.dont_5, R.drawable.dont_6, R.drawable.dont_7, R.drawable.dont_8, R.drawable.dont_9));
 
-//    ArrayList latestOYOImages = new ArrayList<>(Arrays.asList(R.drawable.a_1, R.drawable.a_2, R.drawable.a_3, R.drawable.a_4));
+    ArrayList latestOYOImages = new ArrayList<>(Arrays.asList(R.drawable.latest_1, R.drawable.latest_2, R.drawable.latest_3, R.drawable.latest_4));
+
+    ArrayList roomImages = new ArrayList<>(Arrays.asList(R.drawable.recommended_1, R.drawable.recommended_2, R.drawable.recommended_3, R.drawable.recommended_4,
+            R.drawable.recommended_5, R.drawable.recommended_6, R.drawable.recommended_7, R.drawable.recommended_8));
+    ArrayList roomPricesBefore = new ArrayList<>(Arrays.asList("₹2000", "₹1000", "₹1500", "₹1200", "₹5000", "₹2000", "₹10000", "₹1000"));
+    ArrayList roomPricesAfter = new ArrayList<>(Arrays.asList("₹680", "₹720", "₹975", "₹504", "₹950", "₹920", "₹1000", "₹880"));
+    ArrayList percentageOff = new ArrayList<>(Arrays.asList("66% OFF", "28% OFF", "35% OFF", "58% OFF", "81% OFF", "54% OFF", "90% OFF", "12% OFF"));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +74,16 @@ public class MainActivity extends AppCompatActivity {
         recyclerView3.setAdapter(customAdapter3);
 
 //      -----------------------------------------------------------------------------------------------------------------------------------
+
+        RecyclerView recyclerView4 = (RecyclerView) findViewById(R.id.recommended_recycler_view);
+
+        LinearLayoutManager linearLayoutManager4 = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerView.setLayoutManager(linearLayoutManager4);
+
+        CustomRecommendedAdapter customAdapter4 = new CustomRecommendedAdapter(MainActivity.this, roomImages, roomPricesBefore, roomPricesAfter, percentageOff);
+        recyclerView4.setAdapter(customAdapter4);
+
+//      ------------------------------------------------------------------------------------------------------------------------------------
 
         //loadFragment(new LocationsFragment(), R.id.locationsFrameLayout);
         //loadFragment(new RecommendedFragment(), R.id.recommendedFrameLayout);

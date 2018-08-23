@@ -14,9 +14,8 @@ import java.util.Arrays;
 
 public class RecommendedActivity extends AppCompatActivity {
 
-    ArrayList roomImages;
-//    ArrayList roomImages = new ArrayList<>(Arrays.asList(R.drawable.a_1, R.drawable.a_2, R.drawable.a_3, R.drawable.a_4,
-//            R.drawable.a_5, R.drawable.a_6, R.drawable.a_7, R.drawable.a_8));
+    ArrayList roomImages = new ArrayList<>(Arrays.asList(R.drawable.recommended_1, R.drawable.recommended_2, R.drawable.recommended_3, R.drawable.recommended_4,
+            R.drawable.recommended_5, R.drawable.recommended_6, R.drawable.recommended_7, R.drawable.recommended_8));
     ArrayList roomPricesBefore = new ArrayList<>(Arrays.asList("₹2000", "₹1000", "₹1500", "₹1200", "₹5000", "₹2000", "₹10000", "₹1000"));
     ArrayList roomPricesAfter = new ArrayList<>(Arrays.asList("₹680", "₹720", "₹975", "₹504", "₹950", "₹920", "₹1000", "₹880"));
     ArrayList percentageOff = new ArrayList<>(Arrays.asList("66% OFF", "28% OFF", "35% OFF", "58% OFF", "81% OFF", "54% OFF", "90% OFF", "12% OFF"));

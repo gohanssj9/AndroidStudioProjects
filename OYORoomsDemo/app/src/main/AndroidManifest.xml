@@ -11,15 +11,15 @@
         android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".RecommendedActivity"
-            android:windowSoftInputMode="stateHidden">
+            android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SplashScreenActivity" />
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
@@ -34,7 +34,7 @@
             android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".RecommendedActivity"
             android:label="@string/title_activity_recommended"
             android:theme="@style/AppTheme">
         </activity>

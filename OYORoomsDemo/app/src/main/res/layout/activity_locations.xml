@@ -129,7 +129,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/profile" />
+                    android:src="@drawable/profile_tie" />
 
                 <TextView
                     android:layout_width="match_parent"

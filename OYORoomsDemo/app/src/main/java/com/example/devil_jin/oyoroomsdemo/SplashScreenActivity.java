@@ -140,7 +140,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     public void goToLogin(View view){
-        Intent newIntent = new Intent(getApplicationContext(), LoginActivity.class);
+        Intent newIntent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(newIntent);
     }
 }
