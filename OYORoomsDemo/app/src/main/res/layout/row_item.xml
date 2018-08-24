@@ -4,12 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="5dp">
+    android:padding="3dp"
+    android:background="#DDDDDD">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:orientation="vertical">
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        android:background="@android:color/white">
 
         <RelativeLayout
             android:id="@+id/innerImage"
@@ -165,5 +167,10 @@
                 <!--android:padding="3dp"-->
                 <!--app:srcCompat="@drawable/next_icon" />-->
         </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#DDDDDD">
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

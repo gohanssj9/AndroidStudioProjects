@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList imagesRelativeLayout = new ArrayList<>(Arrays.asList(R.drawable.gps, R.drawable.a_1, R.drawable.a_2, R.drawable.a_3, R.drawable.a_4,
             R.drawable.a_5, R.drawable.a_6, R.drawable.a_7, R.drawable.a_8, R.drawable.a_9, R.drawable.all_cities_2));
     ArrayList textUnderImages = new ArrayList<>(Arrays.asList("Nearby", "Hyderabad", "Chennai", "Delhi", "Mumbai", "Vizag", "Bengaluru", "Noida", "Trichy", "Kolkata", "All Cities"));
+
     ArrayList dontMissTheseImages = new ArrayList<>(Arrays.asList(R.drawable.dont_1, R.drawable.dont_2, R.drawable.dont_3, R.drawable.dont_4,
             R.drawable.dont_5, R.drawable.dont_6, R.drawable.dont_7, R.drawable.dont_8, R.drawable.dont_9));
 
@@ -33,16 +34,15 @@ public class MainActivity extends AppCompatActivity {
     ArrayList roomPricesBefore = new ArrayList<>(Arrays.asList("₹2000", "₹1000", "₹1500", "₹1200", "₹5000", "₹2000", "₹10000", "₹1000"));
     ArrayList roomPricesAfter = new ArrayList<>(Arrays.asList("₹680", "₹720", "₹975", "₹504", "₹950", "₹920", "₹1000", "₹880"));
     ArrayList percentageOff = new ArrayList<>(Arrays.asList("66% OFF", "28% OFF", "35% OFF", "58% OFF", "81% OFF", "54% OFF", "90% OFF", "12% OFF"));
+//    ArrayList ratingValue = new ArrayList<>(Arrays.asList("4.6", "3.9", "4.0", "4.9", "4.1", "3.9", "4.6", "4.2"));
+//    ArrayList comments = new ArrayList<>(Arrays.asList("Very Good", "Good", "Good", "Excellent", "Good", "Good", "Very Good", "Good"));
+//    Array
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        getWindow().setFlags(
-//                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-//                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-//        );
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation_bottom);
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -78,17 +78,12 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView4 = (RecyclerView) findViewById(R.id.recommended_recycler_view);
 
         LinearLayoutManager linearLayoutManager4 = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false);
-        recyclerView.setLayoutManager(linearLayoutManager4);
+        recyclerView4.setLayoutManager(linearLayoutManager4);
 
         CustomRecommendedAdapter customAdapter4 = new CustomRecommendedAdapter(MainActivity.this, roomImages, roomPricesBefore, roomPricesAfter, percentageOff);
         recyclerView4.setAdapter(customAdapter4);
 
 //      ------------------------------------------------------------------------------------------------------------------------------------
-
-        //loadFragment(new LocationsFragment(), R.id.locationsFrameLayout);
-        //loadFragment(new RecommendedFragment(), R.id.recommendedFrameLayout);
-//        loadFragment(new LatestOYOFragment(), R.id.latestOyoFrameLayout);
-//        loadFragment(new DontMissTheseFragment(), R.id.dontMissTheseFrameLayout);
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -112,20 +107,15 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private void loadFragment(Fragment fragment, int drawable_resource){
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(drawable_resource, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
+//    private void loadFragment(Fragment fragment, int drawable_resource){
+//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//        transaction.replace(drawable_resource, fragment);
+//        transaction.addToBackStack(null);
+//        transaction.commit();
+//    }
 
     public void nextActivity(View view){
         Intent intent = new Intent(getApplicationContext(), LocationsActivity.class);
-        startActivity(intent);
-    }
-
-    public void offersActivity(View view){
-        Intent intent = new Intent(getApplicationContext(), RecommendedActivity.class);
         startActivity(intent);
     }
 }

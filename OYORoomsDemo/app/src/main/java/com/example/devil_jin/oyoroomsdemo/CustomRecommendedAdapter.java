@@ -62,10 +62,13 @@ public class CustomRecommendedAdapter extends RecyclerView.Adapter<CustomRecomme
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            relativeLayout = (RelativeLayout) itemView.findViewById(R.id.innerImage);
-            strikeOut = (TextView) itemView.findViewById(R.id.strikeOutTextView);
-            nonStrikeOut = (TextView) itemView.findViewById(R.id.newPriceTextView);
-            percentageText = (TextView) itemView.findViewById(R.id.percentOffTextView);
+            relativeLayout = (RelativeLayout) itemView.findViewById(R.id.innerImageHorizontal);
+            strikeOut = (TextView) itemView.findViewById(R.id.strikeOutTextViewHorizontal);
+            nonStrikeOut = (TextView) itemView.findViewById(R.id.newPriceTextViewHorizontal);
+            percentageText = (TextView) itemView.findViewById(R.id.percentOffTextViewHorizontal);
         }
     }
 }
+
+// #58AC00 -- Very Good -- #E9F4DE
+// #B4DA55 -- Good -- #F5FAE9

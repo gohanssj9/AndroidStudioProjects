@@ -1,5 +1,6 @@
 package com.example.devil_jin.oyoroomsdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -28,6 +29,11 @@ public class LocationsActivity extends AppCompatActivity {
     public boolean onSupportNavigateUp() {
         onBackPressed();
         return true;
+    }
+
+    public void offersActivity(View view){
+        Intent intent = new Intent(getApplicationContext(), RecommendedActivity.class);
+        startActivity(intent);
     }
 
 }
