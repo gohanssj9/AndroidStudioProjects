@@ -17,7 +17,6 @@
             android:id="@+id/innerImage"
             android:layout_width="match_parent"
             android:layout_height="225dp"
-            android:background="#FF0000"
             android:orientation="vertical">
 
             <RelativeLayout
